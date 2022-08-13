@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/firstFragment"
+        android:title="Crime Scene"
+        android:icon="@drawable/ic_crimescene"/>
+    <item
+        android:id="@+id/secondFragment"
+        android:title="Suspect List"
+        android:icon="@drawable/ic_suspect"/>
+
+    <item
+        android:id="@+id/fourthFragment"
+        android:title="Medicine"
+        android:icon="@drawable/ic_baseline_medical_services_24" />
+
+    <item
+        android:id="@+id/thirdFragment"
+        android:title="Solve"
+        android:icon="@drawable/ic_baseline_check_24" />
+</menu>

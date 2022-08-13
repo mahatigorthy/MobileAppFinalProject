@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/thirdfragback"
+    tools:context=".ThirdFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:id="@+id/guessButton"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="Guess"
+        app:backgroundTint="#7DBAEA"
+        app:layout_constraintBottom_toTopOf="@+id/textViewGuess"
+        app:layout_constraintEnd_toEndOf="@+id/spinner"
+        app:layout_constraintStart_toStartOf="@+id/spinner"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <Button
+        android:id="@+id/hintButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:text="Hint"
+        app:backgroundTint="#7DBAEA"
+        app:layout_constraintBottom_toTopOf="@+id/textViewHint"
+
+        app:layout_constraintEnd_toEndOf="@+id/textViewGuess"
+        app:layout_constraintStart_toStartOf="@+id/textViewGuess"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGuess" />
+
+    <Button
+        android:id="@+id/giveUpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="168dp"
+        android:text="give up"
+        app:backgroundTint="#7DBAEA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textViewHint"
+        app:layout_constraintStart_toStartOf="@+id/textViewHint"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHint" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:outlineAmbientShadowColor="#FFFFFF"
+        android:outlineSpotShadowColor="#FFFFFF"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/guessButton"
+        app:layout_constraintEnd_toEndOf="@+id/tvThirdFragment"
+        app:layout_constraintStart_toStartOf="@+id/tvThirdFragment"
+        app:layout_constraintTop_toBottomOf="@+id/tvThirdFragment" />
+
+    <TextView
+        android:id="@+id/textViewHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/crime2"
+        android:text="Don't let Garcia down! Don't give up!"
+        android:textColor="#2A0630"
+        app:layout_constraintBottom_toTopOf="@+id/giveUpButton"
+        app:layout_constraintEnd_toEndOf="@+id/hintButton"
+        app:layout_constraintStart_toStartOf="@+id/hintButton"
+        app:layout_constraintTop_toBottomOf="@+id/hintButton" />
+
+    <TextView
+        android:id="@+id/tvThirdFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="31dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="130dp"
+        android:fontFamily="@font/crime2"
+        android:text="Guess if the selected criminal is corrrect. "
+        android:textColor="#2A0630"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewGuess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/crime2"
+        android:text="Garcia has hints!"
+        android:textColor="#2A0630"
+        app:layout_constraintBottom_toTopOf="@+id/hintButton"
+        app:layout_constraintEnd_toEndOf="@+id/guessButton"
+        app:layout_constraintStart_toStartOf="@+id/guessButton"
+        app:layout_constraintTop_toBottomOf="@+id/guessButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
